@@ -3,13 +3,21 @@
 
   <head>
     <meta charset="UTF-8">
+    <!-- biblioteca de ícones Font Awesome, que contém uma grande coleção de ícones. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
     <title>Restaurante do João</title>
   </head>
 
   <body>
     <header>
-      <h1>MC João Feliz</h1>
+      <div class="logo-container">
+        <img src="./assets/img/MC.png" alt="Logotipo MC João Feliz" class="logo">
+        <h1 class="logo-text">João Feliz</h1>
+      </div>
+
       <!-- Aqui estamos criando blocos de navegação de uma forma organizada ultilizando uma lista não ordenada -->
       <nav>
         <ul>
@@ -20,46 +28,59 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h2>Pratos</h2>
-        <p>Conheça nossos pratos</p>
+      <h2>Nossos Pratos Especiais</h2>
+      <p>Explore o sabor único de nossas receitas, cuidadosamente preparadas para proporcionar uma experiência
+        gastronômica inesquecível.</p>
 
+      <section class="pratos">
         <figure>
           <img
             src="https://www.estadao.com.br/resizer/v2/GUOGMQ4FRJIUPAWMYLE4WNA3SY.jpg?quality=80&auth=091f9aa6c57e9c295188f11d5196f17d3427722076b472e25b5d394929a9731f&width=720&height=503&focal=1185,600"
-            alt="" width="200">
+            alt="Hambúrguer suculento" height="150" width="200">
           <figcaption>
-            Fonte:. Hamburgão suculento que tira nossa atenção.
+            Hamburgão suculento que tira nossa atenção.
           </figcaption>
         </figure>
 
-        <figure></figure>
-        <img src="https://pubimg.band.uol.com.br/files/7ce45fcc850b7f1e4d5a.png" alt="" width="200">
-        <figcaption>
-          Fonte:. Batata maluca turbinada com bacon e cheddar.
-        </figcaption>
-        </figure>
-      </section>
-
-      <section>
-        <h2>Prato do Dia</h2>
         <figure>
-          <img src="https://swiftbr.vteximg.com.br/arquivos/churrasco-completo-de-dia-dos-pais.jpg" alt="" width="200">
+          <img src="https://pubimg.band.uol.com.br/files/7ce45fcc850b7f1e4d5a.png" alt="Batata maluca turbinada"
+            height="150" width="200">
+          <figcaption>
+            Batata maluca turbinada com bacon e cheddar.
+          </figcaption>
         </figure>
-        <figcaption>
-          Fonte:. Churrasquinho do João.
-        </figcaption>
+
+        <figure class="prato-dia">
+          <img src="https://swiftbr.vteximg.com.br/arquivos/churrasco-completo-de-dia-dos-pais.jpg"
+            alt="Churrasquinho do João" width="300">
+          <figcaption>
+            Churrasquinho do João.
+          </figcaption>
+        </figure>
       </section>
     </main>
 
+
+
     <footer>
-      <address>
-        <a href="#" target="_blank">Instagram</a>
-        <a href="#" target="_blank">Facebook</a>
-        <a href="#" target="_blank">TikTok</a>
-        <p>Endereço: Onde a maldade não localiza, nº 0</p>
-        <p>Telefone: (11) 1234-5678</p>
-      </address>
+      <div class="footer-content">
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+
+        <address>
+          <p><strong>Endereço:</strong> Onde a maldade não localiza, nº 0</p>
+          <p><strong>Telefone:</strong> (11) 1234-5678</p>
+        </address>
+      </div>
     </footer>
   </body>
 
