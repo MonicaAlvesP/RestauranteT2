@@ -3,83 +3,135 @@
 
   <head>
     <meta charset="UTF-8">
-    <!-- biblioteca de ícones Font Awesome, que contém uma grande coleção de ícones. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="style.css">
-    <title>Restaurante do João</title>
+    <title>Recanto do João Feliz</title>
   </head>
 
   <body>
     <header>
-      <div class="logo-container">
-        <img src="./assets/img/MC.png" alt="Logotipo MC João Feliz" class="logo">
-        <h1 class="logo-text">João Feliz</h1>
-      </div>
+      <section class="navegation">
+        <h1>Recanto do João Feliz</h1>
+        <nav>
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li>
+              <a href="#" aria-label="Carrinho de Compras">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Buscar">
+                <i class="fas fa-search"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
 
-      <nav>
-        <ul>
-          <li><a href="#">Pratos</a></li>
-          <li><a href="#">Mais pedidos</a></li>
-          <li><a href="#">Pratos do Dia</a></li>
-        </ul>
-      </nav>
+      <section class="banner">
+        <div class="slogam">
+          <h2>Você está com <span>Fome?</span></h2>
+          <p>Peça já o seu prato favorito e receba em casa.</p>
+          <button class="btn-red">Pedir no site</button>
+          <button class="btn-outline">Baixar APP</button>
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2024/02/26/13/18/hamburger-8597939_1280.png">
+      </section>
     </header>
+
     <main>
       <h2>Nossos Pratos Especiais</h2>
       <p>Explore o sabor único de nossas receitas, cuidadosamente preparadas para proporcionar uma experiência
         gastronômica inesquecível.</p>
 
-      <section class="pratos">
+      <section id="menu">
         <figure>
           <img
             src="https://www.estadao.com.br/resizer/v2/GUOGMQ4FRJIUPAWMYLE4WNA3SY.jpg?quality=80&auth=091f9aa6c57e9c295188f11d5196f17d3427722076b472e25b5d394929a9731f&width=720&height=503&focal=1185,600"
             alt="Hambúrguer suculento" height="150" width="200">
-          <figcaption>
-            Hamburgão suculento que tira nossa atenção.
-          </figcaption>
+          <figcaption>Hamburgão suculento </figcaption>
         </figure>
 
         <figure>
-          <img src="https://pubimg.band.uol.com.br/files/7ce45fcc850b7f1e4d5a.png" alt="Batata maluca turbinada"
-            height="150" width="200">
-          <figcaption>
-            Batata maluca turbinada com bacon e cheddar.
-          </figcaption>
+          <img src="https://pubimg.band.uol.com.br/files/7ce45fcc850b7f1e4d5a.png"
+            alt="Batata maluca turbinada com bacon e cheddar" height="150" width="200">
+          <figcaption>Batata maluca turbinada com Bacon e Cheddar</figcaption>
         </figure>
 
-        <figure class="prato-dia">
+        <figure>
           <img src="https://swiftbr.vteximg.com.br/arquivos/churrasco-completo-de-dia-dos-pais.jpg"
             alt="Churrasquinho do João" width="300">
-          <figcaption>
-            Churrasquinho do João.
-          </figcaption>
+          <figcaption>Churrasquinho do João</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://p2.trrsf.com/image/fget/cf/1200/900/middle/images.terra.com/2023/07/10/dia-da-pizza-skkhweuqjcrq.jpg"
+            alt="Prato Vegetariano" height="150" width="200">
+          <figcaption>Pizza de Mussarela com Peperone</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://s2-receitas.glbimg.com/3MhTZmEn-vxeIGovC29jalC2ctQ=/0x0:653x400/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2014/10/28/17_58_29_769_pastel_maria.jpg"
+            alt="Sobremesa Especial" height="150" width="200">
+          <figcaption>Pastel de Carne com Azeitona</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://s2-receitas.glbimg.com/Ja8NZaG1ssHrb11KAkar6W45_5Q=/0x0:1200x675/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/k/B/Vq9PKJTU2bEDIEhBIz9g/coxinha-pratica.jpg"
+            alt="Bebida Refrescante" height="150" width="200">
+          <figcaption>Coxinha de Frango</figcaption>
         </figure>
       </section>
+
+      <section id="sobre">
+        <div class="detalhes">
+          <img
+            src="https://cms-cdn.saipos.com/assets/2023/01/10/como-montar-uma-lanchonete-saudavel-SAIPOS---Marketing-para-Restaurante_uid_63bdabb8bb213.jpg"
+            alt="Ambiente do restaurante" width="600">
+        </div>
+        <div class="tipografia">
+          <h2>Sobre Nós</h2>
+          <p>Bem-vindo ao Recanto do João Feliz! Nosso restaurante foi fundado com o objetivo de oferecer uma
+            experiência
+            gastronômica única e acolhedora, onde cada prato é preparado com carinho e ingredientes frescos.
+            Nossa equipe é apaixonada por cozinhar e dedicada a trazer os sabores mais autênticos, combinando receitas
+            tradicionais com toques modernos. Seja para um almoço em família, um jantar romântico ou uma comemoração
+            especial, estamos aqui para tornar seu momento inesquecível.</p>
+          <p>Nosso compromisso é com a qualidade e a satisfação dos nossos clientes. Venha nos visitar e descubra o
+            sabor
+            que faz a diferença!</p>
+        </div>
+      </section>
+
     </main>
 
+    <footer id="contato">
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
 
-
-    <footer>
-      <div class="footer-content">
-        <div class="social-icons">
-          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
-
-        <address>
-          <p><strong>Endereço:</strong> Onde a maldade não localiza, nº 0</p>
-          <p><strong>Telefone:</strong> (11) 1234-5678</p>
-        </address>
-      </div>
+      <address>
+        <p><strong>Endereço:</strong> Onde a maldade não localiza, nº 0</p>
+        <p><strong>Telefone:</strong> (11) 1234-5678</p>
+      </address>
     </footer>
   </body>
 
