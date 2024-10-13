@@ -1,0 +1,33 @@
+@import 'reset';
+
+#contato {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+  background-color: #333;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+
+  a {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+
+    &:hover {
+      color: #f00;
+    }
+  }
+}
+
+.adress {
+  text-align: center;
+
+  p {
+    color: #fff;
+  }
+}

@@ -1,0 +1,25 @@
+@import 'reset';
+
+#sobre {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  margin-top: 15vh;
+  height: 80vh;
+  background-color: $primary-color;
+
+  img {
+    width: 30%;
+    height: 50%;
+    object-fit: cover;
+  }
+}
+
+.tipograpy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}

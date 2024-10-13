@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;700&display=swap');
+
+$primary-color: #FFC857;
+$secondary-color: #fff;
+$tertiary-color: #333;
+$text-color: #ec3c21;
+
+$font-body: 'Roboto', sans-serif;
+$font-heading: 'Lobster Two', cursive;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: $font-heading;
+  color: $font-heading;
+  font-size: 2.5rem;
+  color: $text-color;
+}
+
+h2,
+h3,
+p {
+  font-family: $font-body;
+  color: $tertiary-color;
+}
+
+span {
+  color: $text-color;
+}
