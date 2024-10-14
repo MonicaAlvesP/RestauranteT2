@@ -401,8 +401,8 @@ span {
   #sobre {
     display: flex;
     flex-direction: column;
+    height: 100vh;
     gap: 2rem;
-    padding-bottom: 5rem;
   }
   #sobre img {
     width: 100%;
@@ -415,15 +415,14 @@ span {
   #contato {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-    text-align: center;
+    height: 25vh;
   }
   #contato .social-icons {
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   #contato .adress {
     width: 100%;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

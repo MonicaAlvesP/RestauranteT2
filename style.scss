@@ -29,8 +29,8 @@
   #sobre {
     display: flex;
     flex-direction: column;
+    height: 100vh;
     gap: 2rem;
-    padding-bottom: 5rem;
 
     img {
       width: 100%;
@@ -46,17 +46,16 @@
   #contato {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-    text-align: center;
+    height: 25vh;
 
     .social-icons {
       width: 100%;
-      justify-content: center;
+      justify-content: space-evenly;
     }
 
     .adress {
       width: 100%;
+      text-align: center;
     }
   }
 }
