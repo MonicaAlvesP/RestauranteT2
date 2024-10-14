@@ -3,6 +3,7 @@
 header {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .menu-navegation {
@@ -11,6 +12,8 @@ header {
   align-items: center;
   padding: 1rem 2rem;
   background-color: $primary-color;
+  position: relative;
+  z-index: 10;
 }
 
 ul {
@@ -30,10 +33,11 @@ li {
     font-weight: 700;
     font-size: 1.2rem;
     text-transform: uppercase;
-  }
+    transition: color 0.3s ease;
 
-  a:hover {
-    color: $text-color;
+    &:hover {
+      color: $text-color;
+    }
   }
 }
 
@@ -45,9 +49,56 @@ li {
   font-family: $font-body;
   font-size: 1.2rem;
   font-weight: 700;
-  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 
   &:hover {
     background-color: darken($text-color, 10%);
+  }
+}
+
+.hamburguer-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+#nav-list {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .menu-navegation {
+    padding: 1rem;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .hamburguer-button {
+    display: block;
+  }
+
+  #nav-list {
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: $primary-color;
+    z-index: 9;
+    padding: 1rem;
+  }
+
+  #nav-list.active {
+    display: flex;
   }
 }

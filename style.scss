@@ -2,33 +2,16 @@
 
 @import './assets/scss/header';
 @import './assets/scss/banner';
-
 @import './assets/scss/menu';
 @import './assets/scss/figureSection';
-
 @import './assets/scss/sobre';
-
 @import './assets/scss/footer';
 
 @media (max-width: 768px) {
 
-  .menu-navegation {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 2rem;
-
-    h1 {
-      font-size: 2rem;
-    }
-
-    a {
-      font-size: 1rem;
-    }
-  }
-
   .banner {
     flex-direction: column-reverse;
+    text-align: center;
 
     img {
       width: 100%;
@@ -36,40 +19,44 @@
   }
 
   #menu {
+    display: grid;
     grid-template-columns: 1fr;
     grid-gap: 5rem;
-    height: 100%;
     width: 80%;
+    margin: 0 auto;
   }
 
   #sobre {
+    display: flex;
     flex-direction: column;
-    height: 100%;
     gap: 2rem;
     padding-bottom: 5rem;
 
     img {
       width: 100%;
-      height: 100%;
+      height: auto;
     }
 
     .tipograpy {
       width: 100%;
+      text-align: center;
     }
   }
 
   #contato {
-    gap: 2rem;
-    height: 100%;
-    padding: 2rem;
+    display: flex;
     flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
 
     .social-icons {
       width: 100%;
+      justify-content: center;
     }
 
     .adress {
-      text-align: center;
+      width: 100%;
     }
   }
 }
